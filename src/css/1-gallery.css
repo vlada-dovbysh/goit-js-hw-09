@@ -1,0 +1,51 @@
+@import url('./reset.css');
+@import url('./base.css');
+@import url('./container.css');
+@import url('./animations.css');
+
+body {
+    justify-content: center;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.gallery-image {
+    width: 360px;
+    height: 200px;
+    transition: transform 300ms ease-in;
+}
+
+.gallery-image:hover {
+    transform: scale(1.05);
+}
+
+.sl-overlay {
+    background: rgba(0, 0, 0, 0.9) !important;
+}
+
+.sl-close,
+.sl-counter,
+.sl-navigation button {
+    color: #fff !important;
+}
+
+.back-home {
+    max-width: 95px;
+    max-height: 40px;
+    padding: 8px 16px;
+    background: #4e75ff;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 12px;
+    margin: 24px auto 0;
+}
+
+.back-home:hover {
+    animation: jumping-bttn 1.2s ease-in;
+    animation-iteration-count: infinite;
+}

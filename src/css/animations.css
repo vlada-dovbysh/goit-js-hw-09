@@ -1,18 +1,11 @@
-@keyframes slide {
-  from {
-    transform: translateX(-140%) translateY(-50%);
+@keyframes jumping-bttn {
+  0%,
+  100% {
+    transform: translateY(0);
+    box-shadow: none;
   }
-  to {
-    transform: translateX(-104%) translateY(-50%);
-  }
-}
-@keyframes stretch {
-  from {
-    opacity: 0;
-    transform: translateX(-50%) translateY(100%) scale(0.2);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(-50%) translateY(100%) scale(1);
+  50% {
+    transform: translateY(-8px);
+    box-shadow: 0 5px 10px rgba(111, 128, 224, 0.9);
   }
 }

@@ -8,11 +8,53 @@
 @import url('./reset.css');
 @import url('./base.css');
 @import url('./container.css');
-@import url('./animations.css');
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+body {
+  background-color: rgba(161, 161, 161, 0.76);
+}
+
+main {
+  margin: 200px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40vh;
+  justify-content: center;
+  align-items: center;
+  border-radius: 24px;
+  max-width: 408px;
+  max-height: 296px;
+  padding: 48px;
+  background: #fff;
+  gap: 24px;
+}
+
+li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 8px;
+  width: 95px;
+  height: 40px;
+  background: #4e75ff;
+  transition: box-shadow 250ms ease-in-out, transform 250ms ease-in;
+}
+li:hover {
+  box-shadow: 5px 5px 15px 3px rgba(78, 117, 255, 0.84);
+  transform: translateY(-4px);
+}
+li:active {
+  transform: translateY(-2px);
+}
+li:last-child {
+  background: red;
+}
+li:last-child:hover {
+  box-shadow: 5px 5px 15px 3px rgba(255, 78, 87, 0.84);
+}
+a {
+  padding: 8px 16px;
+}
